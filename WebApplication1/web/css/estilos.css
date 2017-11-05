@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/10/2017, 06:47:10
+    Author     : Aluno
+*/
+
+body {
+    /*
+background-color: #cccccc;
+*/
+   background-color: #FFFFFF;
+   
+}
+
+#geral {
+   width: 100%;
+   /*
+   position: static;
+   */
+   text-align: center;
+}
+#container{
+    position:static;
+    text-align:center;
+    width:100%;
+}
+#menuref{
+    position: static;
+    width:100%;
+    height:28px;
+    background-color: lightgrey;
+    text-align: center;
+}
+#colunas{
+    text-align:center;
+    width:100%;
+    height: 100%;
+}
+#esquerda {	
+    float: left;	
+    width:50%;
+    height: 100%;
+}
+#direita {	
+    float: left;
+    border-left: 1px solid #666;	
+}
+
+a:link, a:visited {
+    background-color: gray;
+    color: white;
+    height: 28px;
+    width: 150px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: navy;
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 30px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px gray;
+    color: black;
+    font-weight: bold;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: black;
+    font-weight: bold;
+}

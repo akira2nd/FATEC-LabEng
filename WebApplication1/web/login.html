@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tela de login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script src="scriptLogin.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="geral">
+            <div id="container">
+                <img src="IMG/banner.jpg" alt="banner"/><br>
+                
+                <div id="menuref">
+                    <a href="index.html">Página Inicial</a>
+                    <a href="login.html">Login/Cadastro</a>
+                    <a href="agenda2.html">Agendar</a>
+                    <a href="#">Consultar Agenda</a>
+                    <a href="#">Contato</a>
+                </div>
+                
+                <div id="colunas">
+                    <div id="esquerda">
+                        <form name="login-form" action="#">
+                            
+                            <h1><br>Ja tem Cadastro</h1>
+                            <p>
+                            <label><b>E-mail</b></label><br>
+                            <input type="text" placeholder="e-mail" id="uname" name="uname" required>
+                            </p>
+                            <p>
+                            <label><b>Senha</b></label><br>
+                            <input type="password" placeholder="senha" id="psw" name="psw" required>
+                            </p>
+                            <button type="submit" onclick="return validaUsuario();">Login</button>
+                        </form>
+                    </div>
+                
+                    <div id="direita">
+                        <form name="cadastro-form" action="#">
+                            <h1><br>Novo Usuário</h1>
+                            <p>
+                            <label><b>Nome:</b></label><br>
+                            <input type="text" id ="nomeInput" name="nomeInput" required>
+                            </p>
+                            <p>
+                            <label><b>E-mail:</b></label><br>
+                            <input type="text" id="emailInput" name="emailInput" required>
+                            </p>
+                            <p>
+                            <label><b>Senha:</b></label><br>
+                            <input type="password" id="senhaInput" name="senhaInput" required>
+                            </p>
+                            <p>
+                            <label><b>Confirme a senha:</b></label><br>
+                            <input type="password" id="senha2Input" name="senha2Input" required>
+                            </p>
+                            <button type="submit" onclick="return novoCadastro();">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
